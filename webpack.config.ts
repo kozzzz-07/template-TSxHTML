@@ -2,7 +2,7 @@ import * as path from "path";
 import * as webpack from "webpack";
 import HtmlWebPackPlugin from "html-webpack-plugin";
 
-const module: webpack.Module = {
+const module: webpack.ModuleOptions = {
   rules: [
     {
       test: /\.ts$/,
@@ -15,7 +15,7 @@ const module: webpack.Module = {
   ],
 };
 
-const resolve: webpack.Resolve = {
+const resolve: webpack.ResolveOptions = {
   extensions: [".ts", ".js"],
 };
 

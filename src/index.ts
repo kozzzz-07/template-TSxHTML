@@ -1,3 +1,3 @@
 let hello: string = "hello";
 
-alert(hello);
+console.log(hello);
