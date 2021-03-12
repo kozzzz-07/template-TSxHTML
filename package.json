@@ -9,7 +9,8 @@
     "dev": "npx ts-node-dev --respawn",
     "watch:prod": "npx webpack --watch --mode production",
     "watch:dev": "npx webpack --watch --mode development",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +21,8 @@
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
     "npm-check-updates": "^11.2.1",
+    "onchange": "^7.1.0",
+    "prettier": "^2.2.1",
     "ts-loader": "^8.0.17",
     "ts-node": "^9.1.1",
     "ts-node-dev": "^1.1.6",
